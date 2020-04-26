@@ -1,0 +1,213 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Configuration
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Themes: Awesome-CV
+\documentclass[12pt, a4paper]{cvncl}
+
+%%% Override a directory location for fonts(default: 'fonts/')
+\fontdir[fonts/]
+
+%%% Configure a directory location for sections
+\newcommand*{\sectiondir}{resume/}
+\newcommand{\link}[2]{\href{#1}{#2}}
+
+%%% Override color
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+%% Color for highlight
+% Define your custom color if you don't like awesome colors
+\colorlet{awesome}{awesome-emerald}
+
+%%% Override a separator for social informations in header(default: ' | ')
+\headersocialsep[\quad\textbar\quad]
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     3rd party packages
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Needed to divide into several files
+\usepackage{import}
+\usepackage[french]{babel}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Personal Data
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\name{Yuichiro}{Suga}
+\address{1001, Plaire Deuxq Takanawa, Takanawa 1-23-1 Minato-city, 108-0074, Tokyo, Japan}
+\mobile{(+81) 080-3939-9087 (GMT+9)} 
+\email{yuichiro.suga.5@gmail.com}
+\linkedin{yuichirosuga}
+\position{ASSOCIATE CONSULTANT IN TECHNOLOGY FIELD AT PwC}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Content
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Make a footer for CV with three arguments(<left>, <center>, <right>)
+\makecvfooter
+ {}
+ {References are2available upon request}
+ {}
+
+\begin{document}
+%%% Make a header for CV with personal data
+%\cventry{position}{title}{location}{date}{description}
+\makecvheader
+% \par\addvspace{1.5ex}
+ \phantomsection{}
+
+%----------------------------------------------------------
+%Experience
+%----------------------------------------------------------
+\cvsection{Experience}
+\begin{cventries}
+  \cventry
+    {Technology Advisory Service}
+	{Associate Consultant}
+    {PwC Consulting LLC.}
+    {April 2019 - Present}
+    {\begin{cvitems}
+        \item{Designed digital governance and programme management for client's cloud migration}
+        \item{PMO support and product management, from source code management to service roadmap creation for client's business globalization}
+    \end{cvitems}}
+  \cventry
+    {French Sport Manufacturer Branch in Japan}
+    {Intern in a Japan Market Entry Project of an European Company}
+    {Decathlon Japan}
+    {December 2017 - March 2019}
+    {\begin{cvitems}
+	\item{Supported the biggest European sports goods maker to enter Japanese market}
+	\item{Running laboratory store, local sports market research and the first physical store opening project in Japan}
+	\item{Working experience in a highly diversified team for over one working}
+    \end{cvitems}}
+  \cventry
+    {Project Management (Confidential)}
+	{Intern in a French Manufacturer}
+    {Valeo \'Equipements \'Electriques Moteur, France}
+    {May 2017 - September 2017}
+    {\begin{cvitems}
+        \item{Planed a design of simulations for a product functional assessment}
+        \item{Regularly orgnaized international telephone meeting}
+        \item{Knowledge transferring for introduction of a new methodology}
+    \end{cvitems}}
+  \cventry
+    {Research project}
+    {Individual Project of Open Source Bionic Arms}
+    {\link{http://www.ec-lille.fr/en/index.html}{\'Ecole Centrale de Lille}, France}
+    {January 2017 - May 2017}
+    {\begin{cvitems}
+		\item{Noise and vibration reduction, weight saving, faster response, addition of the number of DOF for bionic arms}
+		\item{Using an open source technology, \link{http://exiii.jp/eng.html}{HACKberry}, with 3D printer}
+	\end{cvitems}}
+	\cventry
+		{In charge of electronic circuits}
+		{Project Member of Biological Inspection Device Prototyping}
+		{\link{http://www.ec-lille.fr/en/index.html}{\'Ecole Centrale de Lille}, France}
+		{November 2015 - May 2017}
+		{\begin{cvitems}
+			\item{Development of acoustic sensor for bio-liquid analyte sensing by application of ultrasonic waves and phononic crystal}
+%			\item{Partnership with IEMN, Institut d’\UTF{00C9}lectronique de Micro\UTF{00E9}lectronique de Nnanotechnologie}
+			\item{International team composed of five graduate students in engineering}
+		\end{cvitems}}
+	\cventry
+		{Assistant engineer}
+		{Intern at a Hospital Center}
+		{Lille University Hospital Centre, France}
+		{January 2015}
+		{\begin{cvitems}
+			\item Research into relationships among workers in hospital and companies, and of their communication
+		\end{cvitems}}
+\cventry
+		{Volunteer touristic guide organization}
+		{System Administrator}
+		{\link{http://goodsamaritanclub.org}{Good Samaritan Club}, Kyoto, Japan}
+		{September 2013 - July 2014}
+		{\begin{cvitems}
+		\item{Reformed internal workflow for information security concerning the database and cloud accounts}
+		\item{Maintenance and development of the website and the reservation database}
+		\end{cvitems}}
+\end{cventries}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%    Education
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cvsection{Education}
+\begin{cventries}
+	\cventry
+		{M.Sc in engineering (\scriptsize GPA 4.14/4.50)}
+		{Graduate School of Doshisha University}
+		{Kyoto, Japan}
+		{September 2016 - March 2019}
+		{\begin{cvitems}
+			\item{Stress Analysis of Cultured Cartilage under Mechanical Stimuli Considering Cell Position and Matrix Syntheis}
+			\item{Acquired knowledge and experience of multiscale dynamic explicit finite element method, of 3D image processing and of poin pattern analysis}
+			\item{Expected to finish studies in March 2019}
+		\end{cvitems}}
+	\cventry
+		{Centrale graduate engineering degree (\scriptsize GPA 3.25/4.00)}
+		{\link{http://www.ec-lille.fr/en/index.html}{\'Ecole Centrale de Lille}}
+		{Lille, France}
+		{September 2014 - June 2017}
+		{\begin{cvitems}
+			\item{T.I.M.E. double Master's degree program with Graduate School of Doshisha University}
+			\item{Multi-disciplinary engineering and project management}
+			\item{Mechanical engineering, electronics, signal processing, modeling and simulation of multiphysic system etc}
+		\end{cvitems}}
+	\cventry
+		{B.Sc in engineering (\scriptsize GPA 3.60/4.00)}
+		{\link{http://biomedical.doshisha.ac.jp/en/overview/concept.html}{Doshisha University}}
+		{Kyoto, Japan}
+		{April 2012 - July 2014}
+		{\begin{cvitems}
+			\item{Mathematics, mechanical drawing, materials science and engineering, instrumentation etc}
+		\end{cvitems}}
+\end{cventries}
+
+
+%----------------------------------------------------------
+%Skills
+%----------------------------------------------------------
+\cvsection{Skills}
+\begin{cvskills}
+	\cvskill{Programming/IT}{Web Application (HTML/CSS/Javascript, API), PHP/SQL, Python, C/C++, Java and Linux/Unix}
+	\cvskill{Software}{CAD(CATIA/Fusion 360), Matlab, LabView, PAM-Crash, ImageJ, Mimics, LaTeX, Vim and Microsoft Office products}
+	\cvskill{Management}{PMO, Agile, IT Governance, }
+	\cvskill{Language}{Japanese (native), English (advanced), French (upper-intermediate) and German (beginner)}
+	\cvskill{Others}{Arduino, 3D printer and projet management certificated by MOOC UNOW GdP6}
+\end{cvskills}
+
+\cvsection{Awards}
+\begin{cvhonors}
+	\cvhonor{First prize in Challenge Imagine \& Make (Prototyping and business modeling contest)}{March 2017}
+	\cvhonor{Scholarship for Doshisha Excelent Student}{2016}
+	\cvhonor{Scholarship of French Government}{2014}
+\end{cvhonors}
+%----------------------------------------------------------
+%Interests
+%----------------------------------------------------------
+\cvsection{Interests}
+\begin{cvinterests}
+	\cvinterst{Soccer (since 2007), snowboarding (since 2012), bouldering (since 2019), hiking/camping/climbbing mountains, DIY, traveling and cooking}
+\end{cvinterests}
+
+%----------------------------------------------------------
+%References
+%----------------------------------------------------------
+\end{document}
